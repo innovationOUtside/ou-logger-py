@@ -44,6 +44,15 @@ set_handler("text, tts")
 set_handler("tts")
 ```
 
+When creating log messages, users often want to be able to hear values of things; using f-strings can help here. For example:
+
+```python
+a = 1
+logger.error(f"Value of a is: {a}")
+```
+
+It might be interesting looking for things that serialise objects to speech in a tidy way (see [this issue](https://github.com/innovationOUtside/ou-logger-py/issues/5) for examples).
+
 ## DEVELOPMENT
 
 Build as: `python -m build .`
